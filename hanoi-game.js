@@ -27,7 +27,7 @@ function main() {
 
         // Nível 1: jogador define o número de elementos da torre
         } else if (escolhaPrincipal === 1) {
-            let quantidadeElementos = getPositiveInteger('NÚMERO DE ELEMENTOS DA TORRE: ')
+            let quantidadeElementos = 9//getPositiveInteger('NÚMERO DE ELEMENTOS DA TORRE: ')
             let guardarTorreR = geradorTorres(quantidadeElementos)  // Gera a torre inicial
             const totalMovimentosJogadores = []
     
@@ -70,7 +70,7 @@ function main() {
 
         // Nível 2: as torres são distribuídas de forma aleatória
         } else if(escolhaPrincipal === 2){
-            let quantidadeElementos = getPositiveInteger('NÚMERO DE ELEMENTOS DA TORRE: ')
+            let quantidadeElementos = 9//getPositiveInteger('NÚMERO DE ELEMENTOS DA TORRE: ')
             const destribuicaoAleatoria = quantidadeAleatoria(quantidadeElementos,3)  // Distribui os elementos entre as 3 torres aleatoriamente
             let guardarTorreR = geradorTorres(destribuicaoAleatoria[0])  
             let guardarTorreG = geradorTorres(destribuicaoAleatoria[1])  
@@ -112,7 +112,7 @@ function main() {
             
         // Nível 3: cada torre começa com o mesmo número de elementos
         } else if (escolhaPrincipal === 3) {
-            let quantidadeElementos = getPositiveInteger('NÚMERO DE ELEMENTOS DA TORRE: ')
+            let quantidadeElementos = 9//getPositiveInteger('NÚMERO DE ELEMENTOS DA TORRE: ')
             let guardarTorreR = geradorTorres(quantidadeElementos)  
             let guardarTorreG = geradorTorres(quantidadeElementos)  
             let guardarTorreB = geradorTorres(quantidadeElementos)  
